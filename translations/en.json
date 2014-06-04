@@ -1,0 +1,19 @@
+{
+  "app": {
+    "package": "rapportive_app",
+    "name": {
+      "value": "Rapportive Sample App",
+      "title": "Rapportive Sample App"
+    },
+    "description": {
+      "value": "This app shows your Zendesk end-users' profile and social media links based on their emails.",
+      "title": "Rapportive + Zendesk integration"
+    }
+  },
+  "hello": {
+    "main": {
+      "title": "Enter a brief description of your string here",
+      "value": "Hello"
+    }
+  }
+}
