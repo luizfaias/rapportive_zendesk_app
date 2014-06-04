@@ -1,14 +1,15 @@
 (function() {
 
-	return {
+	return {	
 		events: {
 			'app.activated': 'load_rapportive_info'
 		},
 
 		load_rapportive_info: function() {
-			var currentUser = this.currentUser().name();
+			var requester_email = this.ticket().requester().email();
+			
 			this.switchTo('load_rapportive_info', {
-				username: currentUser
+				username: requester_email
 			});
 		}
 	};

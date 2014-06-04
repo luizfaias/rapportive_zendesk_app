@@ -1,3 +1,8 @@
 .hellotext {
-  text-align: center;
+	text-align: center;
+}
+
+#bug_link { 
+	font-size: 80%;
+	padding-top: 10px; 
 }

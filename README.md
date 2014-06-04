@@ -1,9 +1,10 @@
-# Rapportive Sample App
+# Zendesk Rapportive App
 
 This app shows your Zendesk end-users' profile and social media links based on their emails. Information provided by [Rapportive](http://rapportive.com).
 
 ### The following information is displayed:
 
+* Picture
 * Name
 * Position
 * Company
