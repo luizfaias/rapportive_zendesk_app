@@ -2,16 +2,14 @@
 	<table class="table-condensed">
 		<tbody>
 			<tr>
-				<td width="230px">
-					<h3>{{name}}</h3>
-					<br>
+				<td>
+					<h3>{{name}}</h3><br>
 					{{#if occupations}}
-						{{occupations.0.job_title}}
-						<br>
-						{{occupations.0.company}}
+						<p>{{occupations.0.job_title}}</p>
+						<p>{{occupations.0.company}}</p>
 					{{/if}}
 				</td>
-				<td><img class="profile" src="{{image_url_proxied}}&d=mm"></td>
+				<td class="profile"><img src="{{image_url_proxied}}&d=mm"></td>
 			</tr>
 		</tbody>
 	</table>
@@ -22,7 +20,7 @@
 			{{#each memberships}}
 			<tr>
 				<td>
-					<a href="{{profile_url}}"><img src="https://rapportive.com/images/icons/{{icon_name}}.png"> {{formatted}}</a>
+					<a href="{{profile_url}}" target="_blank"><img src="https://rapportive.com/images/icons/{{icon_name}}.png"> {{formatted}}</a>
 				</td>
 			</tr>
 			{{/each}}

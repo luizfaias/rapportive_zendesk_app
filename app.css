@@ -1,4 +1,12 @@
+table {
+	width: 100%;
+}
+
 .profile {
+	width: 80px;
+}
+
+.profile img {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	-ms-border-radius: 4px;
@@ -10,7 +18,7 @@
 	margin-top: 25px
 }
 
-#bug_link { 
+.issues { 
 	font-size: 80%;
 	padding-top: 10px; 
 }

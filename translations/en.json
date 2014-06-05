@@ -2,18 +2,22 @@
   "app": {
     "package": "rapportive_app",
     "name": {
-      "value": "Rapportive Sample App",
-      "title": "Rapportive Sample App"
+      "value": "Rapportive App",
+      "title": "Rapportive App"
     },
     "description": {
-      "value": "This app shows your Zendesk end-users' profile and social media links based on their emails.",
+      "value": "This app shows your end-users' profile and social media links based on their emails.",
       "title": "Rapportive + Zendesk integration"
     }
   },
-  "hello": {
+  "error": {
     "main": {
-      "title": "Enter a brief description of your string here",
-      "value": "Hello"
+      "value": "There was a problem accessing the data.",
+	  "title": "There was a problem accessing the data."
+    },
+    "try_again_later": {
+      "value": "Please try again later.",
+	  "title": "Please try again later."
     }
   }
 }
