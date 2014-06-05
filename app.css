@@ -1,5 +1,13 @@
-.hellotext {
-	text-align: center;
+.profile {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.social_media_links {
+	margin-top: 25px
 }
 
 #bug_link { 
