@@ -33,24 +33,24 @@
         render_info: function(data) {
 
 			if(data) {
-		        var social_media = data.memberships;
+				var social_media = data.memberships;
 				social_media = _.reject(social_media, function(el) { return el.site_name === "Twitter"; });
 				
-		        this.switchTo('rapportive', {
-		          full_name: data.name,
-				  twitter_username: data.twitter_username,
-		          occupations: data.occupations,
-				  image_url: data.image_url_raw,
-				  social_media: social_media
-		        });
+				this.switchTo('rapportive', {
+					full_name: data.name,
+					twitter_username: data.twitter_username,
+					occupations: data.occupations,
+					image_url: data.image_url_raw,
+					social_media: social_media
+				});
 			} else {
 				this.render_error_page();
 			}
-        },
-
-        render_error_page: function() {
-            this.switchTo('error');
-        }
-    };
-
+		},
+		
+		render_error_page: function() {
+			this.switchTo('error');
+		}
+	};
+	
 }());
