@@ -10,10 +10,14 @@
       "title": "Rapportive + Zendesk integration"
     }
   },
+  "loading": {
+    "value": "Loading. Please wait...",
+    "title": "Loading. Please wait..."
+  },
   "error": {
     "main": {
-      "value": "There was a problem accessing the data.",
-	  "title": "There was a problem accessing the data."
+      "value": "There was a problem accessing the user's data.",
+	  "title": "There was a problem accessing the user's data."
     },
     "try_again_later": {
       "value": "Please try again later.",

@@ -3,24 +3,39 @@
 		<tbody>
 			<tr>
 				<td>
-					<h3>{{name}}</h3><br>
+					<h3>{{full_name}}</h3><br>
 					{{#if occupations}}
 						<p>{{occupations.0.job_title}}</p>
 						<p>{{occupations.0.company}}</p>
 					{{/if}}
 				</td>
-				<td class="profile"><img src="{{image_url_proxied}}&d=mm"></td>
+				<td class="profile"><img src="{{image_url}}&d=mm"></td>
 			</tr>
 		</tbody>
 	</table>
-
-	{{#if memberships}}
-	<table class="table social_media_links">
+	
+	{{#if twitter_username}}
+	<table class="table-condensed social_media">
 		<tbody>
-			{{#each memberships}}
+			<tr>
+				<td class="social_media_link">
+					<a href="http://twitter.com/{{twitter_username}}" target="_blank"><img src="https://rapportive.com/images/icons/twitter.png"> @{{twitter_username}}</a>
+				</td>
+				<td class="social_media_action">
+					<button class="origin btn apps-button">update profile</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	{{/if}}
+
+	{{#if social_media}}
+	<table class="table social_media">
+		<tbody>
+			{{#each social_media}}
 			<tr>
 				<td>
-					<a href="{{profile_url}}" target="_blank"><img src="https://rapportive.com/images/icons/{{icon_name}}.png"> {{formatted}}</a>
+					<a href="{{profile_url}}" target="_blank"><img src="https://rapportive.com/images/icons/{{icon_name}}.png"> {{site_name}}</a>
 				</td>
 			</tr>
 			{{/each}}

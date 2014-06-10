@@ -14,8 +14,21 @@ table {
 	border-radius: 4px;
 }
 
-.social_media_links {
-	margin-top: 25px
+.social_media {
+	margin-top: 25px;
+}
+
+.social_media_link {
+	vertical-align: middle;
+}
+
+.social_media_action {
+	width: 40%;
+	text-align: right;
+}
+
+.social_media_action button {
+	margin: 0px;
 }
 
 .issues { 

@@ -1,6 +1,8 @@
 (function() {
 
     return {
+		defaultState: 'loading',
+		
         events: {
           'app.created':'load_rapportive_info'
         },
@@ -16,22 +18,37 @@
             }
         },
 
-        load_rapportive_info: function() {
+        load_rapportive_info: function() {	
             var requester_email = this.ticket().requester().email();
-            var request = this.ajax('api_call', requester_email);
-            request.done(this.showInfo);
-            request.fail(this.showError);
-        },
-
-        showInfo: function(data) {
-			if(data) {
-				this.switchTo('rapportive', data);
+			
+			if(requester_email == null) {
+				this.switchTo('no_email');
 			} else {
-				this.switchTo('error');
+				var request = this.ajax('api_call', requester_email);
+				request.done(this.render_info);
+				request.fail(this.render_error_page);
 			}
         },
 
-        showError: function() {
+        render_info: function(data) {
+
+			if(data) {
+		        var social_media = data.memberships;
+				social_media = _.reject(social_media, function(el) { return el.site_name === "Twitter"; });
+				
+		        this.switchTo('rapportive', {
+		          full_name: data.name,
+				  twitter_username: data.twitter_username,
+		          occupations: data.occupations,
+				  image_url: data.image_url_raw,
+				  social_media: social_media
+		        });
+			} else {
+				this.render_error_page();
+			}
+        },
+
+        render_error_page: function() {
             this.switchTo('error');
         }
     };
