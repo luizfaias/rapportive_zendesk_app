@@ -22,7 +22,7 @@
             var requester_email = this.ticket().requester().email();
 			
 			if(requester_email == null) {
-				this.switchTo('no_email');
+				this.switchTo('not_found');
 			} else {
 				var request = this.ajax('api_call', requester_email);
 				request.done(this.render_info);
