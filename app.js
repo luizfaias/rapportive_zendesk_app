@@ -24,7 +24,11 @@
         },
 
         showInfo: function(data) {
-			this.switchTo('rapportive', data);
+			if(data) {
+				this.switchTo('rapportive', data);
+			} else {
+				this.switchTo('error');
+			}
         },
 
         showError: function() {
