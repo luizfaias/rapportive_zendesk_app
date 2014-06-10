@@ -22,7 +22,7 @@
 					<a href="http://twitter.com/{{twitter_username}}" target="_blank"><img src="https://rapportive.com/images/icons/twitter.png"> @{{twitter_username}}</a>
 				</td>
 				<td class="social_media_action">
-					<button class="origin btn apps-button">update profile</button>
+					<button class="origin btn apps-button">{{t "user_profile.update"}}</button>
 				</td>
 			</tr>
 		</tbody>

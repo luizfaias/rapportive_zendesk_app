@@ -1,27 +1,39 @@
 {
-  "app": {
-    "package": "rapportive_app",
-    "name": {
-      "value": "Rapportive App",
-      "title": "Rapportive App"
+    "app": {
+        "description": {
+            "title": "Rapportive + Zendesk integration",
+            "value": "This app shows your end-users' profile and social media links based on their emails."
+        },
+        "name": {
+            "title": "Rapportive App",
+            "value": "Rapportive App"
+        },
+        "package": "rapportive_app"
     },
-    "description": {
-      "value": "This app shows your end-users' profile and social media links based on their emails.",
-      "title": "Rapportive + Zendesk integration"
-    }
-  },
-  "loading": {
-    "value": "Loading. Please wait...",
-    "title": "Loading. Please wait..."
-  },
-  "error": {
-    "main": {
-      "value": "There was a problem accessing the user's data.",
-	  "title": "There was a problem accessing the user's data."
+    "error": {
+        "main": {
+            "title": "There was a problem accessing the user's data.",
+            "value": "There was a problem accessing the user's data."
+        },
+        "try_again_later": {
+            "title": "Please try again later.",
+            "value": "Please try again later."
+        }
     },
-    "try_again_later": {
-      "value": "Please try again later.",
-	  "title": "Please try again later."
+    "issue": {
+        "report": {
+            "title": "Report an issue",
+            "value": "Report an issue"
+        }
+    },
+    "loading": {
+        "title": "Loading. Please wait...",
+        "value": "Loading. Please wait..."
+    },
+    "user_profile": {
+        "update": {
+            "title": "update profile",
+            "value": "update profile"
+        }
     }
-  }
 }
