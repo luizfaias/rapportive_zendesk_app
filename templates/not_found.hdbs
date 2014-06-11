@@ -1,2 +1,2 @@
-<p>User's profile does not contain an email.</p>
-<p>Social media info cannot be loaded at this time.</p>
+<p>{{t "error.no_email_found"}}</p>
+<p>{{t "error.social_media_not_loaded"}}</p>

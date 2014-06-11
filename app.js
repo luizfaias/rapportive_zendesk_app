@@ -98,7 +98,7 @@
 
 			request.done(function() {
 				services.notify(this.I18n.t('user.updated'));
-				this.$('.update_twitter_btn').hide()
+				this.$('.update_twitter_btn').hide();
 			});
 
 			request.fail(function(data) {
