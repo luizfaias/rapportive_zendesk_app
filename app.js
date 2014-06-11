@@ -22,7 +22,7 @@
 			},
 			rapportive_api_call: function() {
 				return {
-					url: 'http://rapportive-api-sinatra.herokuapp.com/api/v1/rapportive/' + requester_email,
+					url: 'http://rapportive-zendesk.herokuapp.com/api/v1/rapportive/' + requester_email,
 					type: 'GET',
 					dataType: 'json',
 					contentType: 'application/json'
