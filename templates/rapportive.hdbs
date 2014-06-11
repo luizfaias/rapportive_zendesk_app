@@ -20,10 +20,11 @@
 			<tr>
 				<td class="social_media_link">
 					<a href="http://twitter.com/{{twitter_username}}" target="_blank"><img src="https://rapportive.com/images/icons/twitter.png"> @{{twitter_username}}</a>
+					<input type="hidden" id="twitter_handle" value="{{twitter_username}}" />
 				</td>
 				<td class="social_media_action">
 					{{#unless has_twitter_profile}}
-						<button class="origin btn apps-button">{{t "user_profile.update"}}</button>
+						<button class="update_twitter_btn origin btn apps-button">{{t "user.update_profile"}}</button>
 					{{/unless}}
 				</td>
 			</tr>
