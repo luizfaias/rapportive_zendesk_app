@@ -8,7 +8,15 @@
             "title": "Rapportive App",
             "value": "Rapportive App"
         },
-        "package": "rapportive_app"
+        "package": "rapportive_app",
+        "parameters": {
+            "api_endpoint": {
+                "label": {
+                    "title": "Rapportive's URL",
+                    "value": "Rapportive's URL"
+                }
+            }
+        }
     },
     "error": {
         "main": {

@@ -3,6 +3,7 @@
 	var requester_id;
 	var requester_email;
 	var has_twitter_profile;
+	var API_endpoint;
 
 	return {
 		defaultState: 'loading',
@@ -22,7 +23,7 @@
 			},
 			rapportive_api_call: function() {
 				return {
-					url: 'http://rapportive-zendesk.herokuapp.com/api/v1/rapportive/' + requester_email,
+					url: API_endpoint + '/api/v1/rapportive/' + requester_email,
 					type: 'GET',
 					dataType: 'json',
 					contentType: 'application/json'
@@ -43,6 +44,7 @@
 		},
 
 		init: function() {
+			API_endpoint = this.setting('api_endpoint');
 			requester_id = this.ticket().requester().id();
 			requester_email = this.ticket().requester().email();
 
